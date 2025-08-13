@@ -9,8 +9,8 @@
       rel="stylesheet"
     />
     <title>index</title>
-    <script type="module" crossorigin src="/Workway/assets/index-aO_OZcHC.js"></script>
-    <link rel="stylesheet" crossorigin href="/Workway/assets/index-DJxTl-MS.css">
+    <script type="module" crossorigin src="/Workway/assets/index-Bl487sCL.js"></script>
+    <link rel="stylesheet" crossorigin href="/Workway/assets/index-CuEVaClj.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
@@ -112,7 +112,7 @@
           </ul>
           <div class="tab-content" id="pills-tabContent">
             <div
-              class="tab-pane fade show active"
+              class="tab-pane fade rounded-4 bg-light shadow p-9"
               id="pills-info"
               role="tabpanel"
               aria-labelledby="pills-info-tab"
@@ -121,22 +121,121 @@
               個人資料...
             </div>
             <div
-              class="tab-pane fade"
+              class="tab-pane fade show active rounded-4 bg-light shadow p-9"
               id="pills-record"
               role="tabpanel"
               aria-labelledby="pills-record-tab"
               tabindex="0"
             >
-              預約紀錄...
+              <h2 class="fs-4 mb-6">預約紀錄</h2>
+              <div class="d-flex mb-9 gap-6">
+                <div class="card w-100">
+                  <div class="card-body py-6 text-center">
+                    <h3 class="fs-2 text-primary fw-bold mb-2">3</h3>
+                    <p class="text-secondary fs-6">已完成諮詢</p>
+                  </div>
+                </div>
+
+                <div class="card w-100">
+                  <div class="card-body py-6 text-center">
+                    <h3 class="fs-2 text-primary fw-bold mb-2">2025/10/10</h3>
+                    <p class="text-secondary fs-6">即將到來</p>
+                  </div>
+                </div>
+
+                <div class="card w-100">
+                  <div class="card-body py-6 text-center">
+                    <h3 class="fs-2 text-primary fw-bold mb-2">3/6</h3>
+                    <p class="text-secondary fs-6">使用方案進度</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex mb-6">
+                <div>
+                  <button type="button" class="btn btn-dark me-2 rounded-4">
+                    全部預約
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border me-2 rounded-4"
+                  >
+                    已完成
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border rounded-4"
+                  >
+                    已取消
+                  </button>
+                </div>
+                <div class="ms-auto">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-outline-dark border rounded-4"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      排序<span
+                        class="material-icons-outlined ms-1 align-bottom"
+                      >
+                        filter_list
+                      </span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a class="dropdown-item active" href="#">新到舊</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">舊到新</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@social</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>...</p>
             </div>
+
             <div
-              class="tab-pane fade"
+              class="tab-pane fade rounded-4 bg-light shadow p-9"
               id="pills-plan"
               role="tabpanel"
               aria-labelledby="pills-plan-tab"
               tabindex="0"
             >
-              職旅計劃...
+              <h2 class="fs-4">職旅計劃</h2>
+              ...
             </div>
           </div>
         </div>
