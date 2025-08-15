@@ -302,6 +302,7 @@ $primary:       #4A69E8; //  $blue !default;
 $secondary:     #667F99; //  $gray-600 !default;
 $success:    #36C99F;  //  $green !default;
 $info:          $cyan !default;
+$finish: #8599AD;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $gray:          #E0E5EB;
@@ -318,7 +319,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "finish": $finish
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -738,22 +740,22 @@ $mark-bg:                     $yellow-100 !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 
 // scss-docs-start table-variables
-$table-cell-padding-y:        .5rem !default;
-$table-cell-padding-x:        .5rem !default;
+$table-cell-padding-y:        1rem !default;
+$table-cell-padding-x:    12px;  //  .5rem !default;
 $table-cell-padding-y-sm:     .25rem !default;
 $table-cell-padding-x-sm:     .25rem !default;
 
 $table-cell-vertical-align:   top !default;
 
 $table-color:                 var(--#{$prefix}emphasis-color) !default;
-$table-bg:                    var(--#{$prefix}body-bg) !default;
+$table-bg:                 var(--#{$prefix}body-bg) !default;
 $table-accent-bg:             transparent !default;
 
 $table-th-font-weight:        null !default;
 
 $table-striped-color:         $table-color !default;
-$table-striped-bg-factor:     .05 !default;
-$table-striped-bg:            rgba(var(--#{$prefix}emphasis-color-rgb), $table-striped-bg-factor) !default;
+$table-striped-bg-factor:      .05 !default;
+$table-striped-bg:           #E0E5EB; // rgba(var(--#{$prefix}emphasis-color-rgb), $table-striped-bg-factor) !default;
 
 $table-active-color:          $table-color !default;
 $table-active-bg-factor:      .1 !default;
@@ -761,7 +763,7 @@ $table-active-bg:             rgba(var(--#{$prefix}emphasis-color-rgb), $table-a
 
 $table-hover-color:           $table-color !default;
 $table-hover-bg-factor:       .075 !default;
-$table-hover-bg:              rgba(var(--#{$prefix}emphasis-color-rgb), $table-hover-bg-factor) !default;
+$table-hover-bg:          #D2D9F9; //    rgba(var(--#{$prefix}emphasis-color-rgb), $table-hover-bg-factor) !default;
 
 $table-border-factor:         .2 !default;
 $table-border-width:          var(--#{$prefix}border-width) !default;
@@ -1246,9 +1248,9 @@ $navbar-dark-brand-hover-color:     $navbar-dark-active-color !default;
 
 // scss-docs-start dropdown-variables
 $dropdown-min-width:                10rem !default;
-$dropdown-padding-x:                0 !default;
-$dropdown-padding-y:                .5rem !default;
-$dropdown-spacer:                   .125rem !default;
+$dropdown-padding-x:             0 !default;
+$dropdown-padding-y:             .5rem !default;
+$dropdown-spacer:             .5rem;      // .125rem !default;
 $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    var(--#{$prefix}body-color) !default;
 $dropdown-bg:                       var(--#{$prefix}body-bg) !default;
@@ -1264,8 +1266,8 @@ $dropdown-link-color:               var(--#{$prefix}body-color) !default;
 $dropdown-link-hover-color:         $dropdown-link-color !default;
 $dropdown-link-hover-bg:            var(--#{$prefix}tertiary-bg) !default;
 
-$dropdown-link-active-color:        $component-active-color !default;
-$dropdown-link-active-bg:           $component-active-bg !default;
+$dropdown-link-active-color:      $black; // $component-active-color !default;
+$dropdown-link-active-bg:        #E0E5EB; //  $component-active-bg !default;
 
 $dropdown-link-disabled-color:      var(--#{$prefix}tertiary-color) !default;
 
@@ -1496,11 +1498,11 @@ $toast-header-border-color:         $toast-border-color !default;
 // Badges
 
 // scss-docs-start badge-variables
-$badge-font-size:                   .75em !default;
-$badge-font-weight:                 $font-weight-bold !default;
-$badge-color:                       $white !default;
-$badge-padding-y:                   .35em !default;
-$badge-padding-x:                   .65em !default;
+$badge-font-size:               14px;  // .75em !default;
+$badge-font-weight:            400;   //  $font-weight-bold !default;
+$badge-color:                   $secondary;   // $white !default;
+$badge-padding-y:                .35em !default;
+$badge-padding-x:                 8px; // .65em !default;
 $badge-border-radius:               var(--#{$prefix}border-radius) !default;
 // scss-docs-end badge-variables
 
