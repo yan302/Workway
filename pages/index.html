@@ -16,13 +16,13 @@
       <div class="container">
         <div class="row py-12">
           <ul
-            class="nav nav-pills mb-6 justify-content-center"
+            class="nav nav-pills mb-6 justify-content-center tabs-bg-light"
             id="pills-tab"
             role="tablist"
           >
             <li class="nav-item me-6" role="presentation">
               <button
-                class="nav-link active rounded-4"
+                class="nav-link nav-pills-link border py-3 px-5 active rounded-4"
                 id="pills-info-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#pills-info"
@@ -38,7 +38,7 @@
             </li>
             <li class="nav-item me-6" role="presentation">
               <button
-                class="nav-link rounded-4"
+                class="nav-link nav-pills-link border py-3 px-5 rounded-4"
                 id="pills-record-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#pills-record"
@@ -54,7 +54,7 @@
             </li>
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link rounded-4"
+                class="nav-link nav-pills-link border py-3 px-5 rounded-4"
                 id="pills-plan-tab"
                 data-bs-toggle="pill"
                 data-bs-target="#pills-plan"
@@ -521,7 +521,7 @@
                         style="height: 160px"
                         maxlength="300"
                       ></textarea>
-                      <label for="job-desc" class="text-dark"
+                      <label for="job-desc"
                         >職業摘要（簡短描述您的專業背景和核心競爭力最多 300
                         字）</label
                       >
@@ -535,7 +535,7 @@
                         placeholder="作品案例展示"
                         id="works"
                       ></textarea>
-                      <label for="works" class="text-dark">作品案例展示</label>
+                      <label for="works">作品案例展示</label>
                     </div>
                   </div>
                   <!-- 附件檔案 -->
@@ -578,7 +578,7 @@
                         style="height: 160px"
                         maxlength="300"
                       ></textarea>
-                      <label for="goal-shorttern" class="text-dark"
+                      <label for="goal-shorttern"
                         >1 年短期職涯目標（最多 300 字）</label
                       >
                     </div>
@@ -593,7 +593,7 @@
                         style="height: 160px"
                         maxlength="300"
                       ></textarea>
-                      <label for="goal-longtern" class="text-dark"
+                      <label for="goal-longtern"
                         >1-3 年中長期職涯願景（最多 300 字））</label
                       >
                     </div>
@@ -676,9 +676,7 @@
                         placeholder="目標薪資/收入"
                         id="current-salary"
                       ></textarea>
-                      <label for="current-salary" class="text-dark"
-                        >目標薪資/收入</label
-                      >
+                      <label for="current-salary">目標薪資/收入</label>
                     </div>
                   </div>
                   <!-- 目前面臨的職涯挑戰 -->
@@ -1115,7 +1113,7 @@
                         style="height: 160px"
                         maxlength="300"
                       ></textarea>
-                      <label for="goal-shorttern" class="text-dark"
+                      <label for="goal-shorttern"
                         >專業背景和核心競爭力（最多300字）</label
                       >
                     </div>
@@ -1130,9 +1128,7 @@
                         style="height: 160px"
                         maxlength="300"
                       ></textarea>
-                      <label for="goal-longtern" class="text-dark"
-                        >專業技能（最多300字）</label
-                      >
+                      <label for="goal-longtern">專業技能（最多300字）</label>
                     </div>
                   </div>
 
@@ -1146,9 +1142,7 @@
                         style="height: 160px"
                         maxlength="300"
                       ></textarea>
-                      <label for="goal-shorttern" class="text-dark"
-                        >語文能力（最多300字）</label
-                      >
+                      <label for="goal-shorttern">語文能力（最多300字）</label>
                     </div>
                   </div>
                   <!-- 資格證照（最多300字） -->
@@ -1161,9 +1155,7 @@
                         style="height: 160px"
                         maxlength="300"
                       ></textarea>
-                      <label for="goal-longtern" class="text-dark"
-                        >資格證照（最多300字）</label
-                      >
+                      <label for="goal-longtern">資格證照（最多300字）</label>
                     </div>
                   </div>
                 </div>
@@ -1188,9 +1180,7 @@
                         style="height: 160px"
                         maxlength="500"
                       ></textarea>
-                      <label for="goal-shorttern" class="text-dark"
-                        >學歷背景（最多500字）</label
-                      >
+                      <label for="goal-shorttern">學歷背景（最多500字）</label>
                     </div>
                   </div>
 
@@ -1204,7 +1194,7 @@
                         style="height: 160px"
                         maxlength="500"
                       ></textarea>
-                      <label for="goal-shorttern" class="text-dark"
+                      <label for="goal-shorttern"
                         >專業培訓與工作坊（最多500字）</label
                       >
                     </div>
@@ -1215,7 +1205,7 @@
                 <div class="d-flex justify-content-center">
                   <button
                     type="submit"
-                    class="btn btn-outline-dark border rounded-4 me-6"
+                    class="btn btn-outline-dark border rounded-4 me-6 pe-3"
                   >
                     匯出 PDF<span
                       class="material-icons-outlined ms-1 align-bottom"
@@ -1223,8 +1213,8 @@
                       chevron_right
                     </span>
                   </button>
-                  <button type="button" class="btn btn-dark rounded-4">
-                    匯出 PDF<span
+                  <button type="button" class="btn btn-dark rounded-4 pe-3">
+                    儲存更新<span
                       class="material-icons-outlined ms-1 align-bottom"
                     >
                       chevron_right
