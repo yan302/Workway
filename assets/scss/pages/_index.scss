@@ -14,3 +14,19 @@
 .side-width{
   width: 300px;
 }
+
+
+/* 手機先滿版 */ 
+.w-580 { width: 100%; }
+
+/* 桌面 (lg ≥ 992px) 才固定 580px */
+@media (min-width: 992px) {
+  .w-580 { width: 580px; }
+}
+
+
+
+.hero-ball{
+  background: url(/assets/images/index/gradient-ball.png) center no-repeat ;
+  background-size: contain;   
+ }
