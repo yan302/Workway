@@ -1,32 +1,123 @@
-
-
-.tabs-bg-light {
-.nav-link{
-  background: $light;
-}
-}
-
-
-.btn{
+.btn {
   padding: 12px 20px;
 }
 
-.side-width{
-  width: 300px;
+
+.hero-ball {
+  background: url(/assets/images/index/gradient-ball.png) center no-repeat;
+  background-size: contain;
+}
+
+.hero-ball-right {
+  background-image: url(/assets/images/index/gradient-ball.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  background-position: calc(100% + 120px) calc(100% + 200px);
+}
+
+.w-580 {
+  width: 100%;
+}
+
+.w-48 {
+  width: 48px;
+}
+
+.scrolling-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 12px;
+}
+
+.card-item {
+  display: inline-block;
+  width: 320px;
+
+  .card {
+    white-space: normal;
+  }
+}
+
+.card-title {
+  font-size: 24px;
+}
+
+.dialog {
+  background: url(/assets/images/index/dialog.svg) center no-repeat;
+  background-size: cover;
+  width: 120px;
+  height: 64px;
 }
 
 
-/* 手機先滿版 */ 
-.w-580 { width: 100%; }
+.dialog-w {
+  background: url(/assets/images/index/dialog-w.svg) center no-repeat;
+  background-size: cover;
+  width: 120px;
+  height: 64px;
+}
 
-/* 桌面 (lg ≥ 992px) 才固定 580px */
+
+.radius-right-top {
+  border-radius: 0 12px 0 0;
+}
+
+.radius-right-bottom {
+  border-radius: 0 0 12px 0;
+}
+
+.mt--120 {
+  margin-top: -180px;
+}
+
+.adv-vector {
+  top: -180px;
+  right: 10px;
+}
+
+.bg-grid {
+  background: url(/assets/images/index/bg-grid.png) repeat;
+  background-size: 50;
+}
+
+
+
+.hr-dots {
+  border-bottom: 2px dotted var(--bs-border-color);
+}
+
+/* 桌面 (lg ≥ 992px)  */
 @media (min-width: 992px) {
-  .w-580 { width: 580px; }
+  .w-580 {
+    width: 580px;
+  }
+
+  .w-48 {
+    width: 96px
+  }
+
+  .ps-lg-312 {
+    padding-left: 312px;
+  }
+
+  .card-item {
+    width: 400px;
+  }
+
+  .mw-416 {
+    max-width: 416px;
+  }
+
+  .scrolling-wrapper {
+    padding: 12px 412px 12px 12px;
+
+
+    .hero-ball-right {
+      background-position: calc(100% + 40px) calc(100% + 80px);
+    }
+
+
+  }
+
 }
-
-
-
-.hero-ball{
-  background: url(/assets/images/index/gradient-ball.png) center no-repeat ;
-  background-size: contain;   
- }

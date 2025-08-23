@@ -1,4 +1,3 @@
-
 @import 'bootstrap/scss/functions';
 @import './helper/variables';
 @import './helper/variables-dark';
@@ -11,8 +10,9 @@
 
 @import './base/base.scss';
 @import './layout/nav.scss';
-
+@import './layout/footer.scss';
 
 
 @import './pages/index.scss';
-@import './layout/footer.scss';
+@import './pages/user.scss';
+@import './pages/about.scss';
